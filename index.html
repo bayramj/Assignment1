@@ -1,9 +1,26 @@
 <html>
 	<head>
 			<title> Julian's List </title>
+			<link href="skills.css" rel="stylesheet" type="text/css">
+
 	</head>
 	<body>
 		<h1> My Top 3 Skills </h1>
+
+		<button onclick="myFunction()">Click to Hide Name</button>
+		<div id="myDIV">
+  		Julian Bayram
+		</div>
+		<script>
+			function myFunction() {
+    		var x = document.getElementById("myDIV");
+			if (x.style.display === "none") {
+					x.style.display = "block";
+    		} else {
+				x.style.display = "none";
+			}
+			}
+		</script>
 		<ul>
 			<li> Editing videos with Final Cut Pro </li>
 			<li> Working with photos on Adobe Lightroom </li>
